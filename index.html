@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nativa Joyería — Joyas que nacen de la tierra</title>
+  <meta name="description" content="Joyería artesanal en oro 18k y plata 925. Piezas únicas inspiradas en la naturaleza, hechas a mano en pequeños lotes.">
+  <meta name="theme-color" content="#081C15">
+  <meta property="og:title" content="Nativa Joyería — Joyas que nacen de la tierra">
+  <meta property="og:description" content="Oro 18k, plata 925 y piedras naturales. Piezas creadas a mano, inspiradas en las formas silenciosas del bosque.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero.jpg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23081C15'/%3E%3Cpath d='M32 14 48 28 32 50 16 28z' fill='none' stroke='%23C6A15B' stroke-width='2'/%3E%3Cpath d='M16 28h32M32 14 25 28l7 22M32 14l7 14-7 22' fill='none' stroke='%23C6A15B' stroke-width='1.2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero.jpg">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Nativa Joyería, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 5 41 19 24 43 7 19 24 5Z" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M7 19h34M24 5l-8 14 8 24M24 5l8 14-8 24" stroke="currentColor" stroke-width=".7" opacity=".65"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">NATIVA</span>
+          <span class="brand__sub">JOYERÍA</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#colecciones">Colecciones</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#historia">Nuestra historia</a>
+        <a href="#editorial">Editorial</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="icon-btn header__social" href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener" aria-label="Instagram de Nativa Joyería"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4.1" stroke="currentColor" stroke-width="1.4"/><circle cx="17" cy="7" r="1.05" fill="currentColor"/></svg></a>
+        <a class="icon-btn header__social" href="https://www.tiktok.com/@nativa.joyera?_r=1&amp;_t=ZS-9BV0KS5ofs9" target="_blank" rel="noopener" aria-label="TikTok de Nativa Joyería"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+        <button class="icon-btn" id="search-open" type="button" aria-label="Buscar joyas" aria-haspopup="dialog">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.4" stroke="currentColor" stroke-width="1.3"/><path d="m15.8 15.8 4.2 4.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn" id="bag-button" type="button" aria-label="Ver mi bolsa">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5.5 8.5h13l1.1 11.5H4.4L5.5 8.5Z" stroke="currentColor" stroke-width="1.3"/><path d="M9 9V6.8a3 3 0 0 1 6 0V9" stroke="currentColor" stroke-width="1.3"/></svg>
+          <span class="bag-count" id="bag-count" hidden>0</span>
+        </button>
+        <button class="icon-btn burger" id="menu-open" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <div class="hero__inner">
+          <p class="eyebrow">Joyería artesanal <span class="eyebrow__sep">·</span> Desde 2018</p>
+          <h1 class="hero__title">Joyas que nacen<br><em>de la tierra</em></h1>
+          <p class="hero__lead">Oro 18k, plata 925 y piedras naturales. Piezas creadas a mano en pequeños lotes, inspiradas en las formas silenciosas del bosque.</p>
+          <div class="hero__actions">
+            <a class="btn btn--solid" href="#colecciones">Explorar colecciones <span class="btn__arrow" aria-hidden="true">→</span></a>
+            <a class="btn" href="#historia">Nuestra historia</a>
+          </div>
+          <ul class="hero__materials">
+            <li>Oro 18k</li>
+            <li>Plata 925</li>
+            <li>Piedras naturales</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img src="assets/hero.jpg" alt="Collar dorado con detalles de perlas reposando sobre hojas verdes" fetchpriority="high" width="1800" height="2700">
+        <div class="hero__frame" aria-hidden="true"></div>
+        <span class="hero__vertical">Hecho a mano · Piezas únicas</span>
+        <div class="hero__badge">
+          <span>Edición limitada</span>
+          <strong>Colección Selva</strong>
+          <a href="#colecciones">Descubrir <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#colecciones" aria-label="Desliza para descubrir las colecciones">
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+        Desliza
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-label="Nuestros sellos: oro 18k, plata 925, hecho a mano, ediciones limitadas">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Oro 18k</span><i aria-hidden="true">◆</i><span>Plata 925</span><i aria-hidden="true">◆</i><span>Hecho a mano</span><i aria-hidden="true">◆</i><span>Ediciones limitadas</span><i aria-hidden="true">◆</i><span>Envíos a todo el país</span><i aria-hidden="true">◆</i><span>Empaque de regalo</span><i aria-hidden="true">◆</i>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>Oro 18k</span><i>◆</i><span>Plata 925</span><i>◆</i><span>Hecho a mano</span><i>◆</i><span>Ediciones limitadas</span><i>◆</i><span>Envíos a todo el país</span><i>◆</i><span>Empaque de regalo</span><i>◆</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLECCIONES -->
+    <section class="section collections" id="colecciones">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">01 — Colecciones</p>
+            <h2>Tres formas de<br><em>llevar lo esencial</em></h2>
+          </div>
+          <p class="section-head__aside-text">Cada material guarda una historia distinta. Elige la que mejor hable de ti.</p>
+        </div>
+
+        <div class="collections__grid">
+          <a class="collection-card reveal" href="#piezas" data-filter="oro" style="--delay:.05s">
+            <img src="assets/coleccion-oro.jpg" alt="Collar de oro 18k con colgante sobre tela gris" loading="lazy" width="1400" height="2100">
+            <span class="collection-card__frame" aria-hidden="true"></span>
+            <span class="collection-card__top"><span>01</span><span class="pill">Oro 18k</span></span>
+            <div class="collection-card__body">
+              <h3>Oro</h3>
+              <p>Luz cálida para toda la vida. Piezas atemporales en oro 18k.</p>
+              <span class="link-arrow">Ver colección</span>
+            </div>
+          </a>
+
+          <a class="collection-card reveal" href="#piezas" data-filter="plata" style="--delay:.14s">
+            <img src="assets/coleccion-plata.jpg" alt="Brazalete de plata 925 con textura sobre fondo negro" loading="lazy" width="1400" height="933">
+            <span class="collection-card__frame" aria-hidden="true"></span>
+            <span class="collection-card__top"><span>02</span><span class="pill">Plata 925</span></span>
+            <div class="collection-card__body">
+              <h3>Plata</h3>
+              <p>Brillo sereno para todos los días. Plata 925 trabajada a mano.</p>
+              <span class="link-arrow">Ver colección</span>
+            </div>
+          </a>
+
+          <a class="collection-card reveal" href="#piezas" data-filter="nativa" style="--delay:.23s">
+            <img src="assets/coleccion-nativa.jpg" alt="Mano con pulsera fina de oro sobre hojas verdes" loading="lazy" width="1400" height="2100">
+            <span class="collection-card__frame" aria-hidden="true"></span>
+            <span class="collection-card__top"><span>03</span><span class="pill">Series limitadas</span></span>
+            <div class="collection-card__body">
+              <h3>Edición Nativa</h3>
+              <p>Series cortas de autor. Formas orgánicas, piedras naturales y piezas irrepetibles.</p>
+              <span class="link-arrow">Ver colección</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PIEZAS DESTACADAS -->
+    <section class="section section--cream products" id="piezas">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--dark">02 — Selección</p>
+            <h2>Piezas <em>destacadas</em></h2>
+          </div>
+          <p class="section-head__aside-text">Cuatro favoritas del taller, listas para encontrar su historia.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filtrar piezas por material">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Todas</button>
+          <button class="filter-btn" type="button" data-filter="oro" aria-pressed="false">Oro</button>
+          <button class="filter-btn" type="button" data-filter="plata" aria-pressed="false">Plata</button>
+          <button class="filter-btn" type="button" data-filter="nativa" aria-pressed="false">Edición Nativa</button>
+        </div>
+
+        <div class="filter-status" id="filter-status" hidden aria-live="polite">
+          <span id="filter-status-text"></span>
+          <button type="button" id="filter-clear">Limpiar filtro</button>
+        </div>
+
+        <div class="products__grid" id="product-grid">
+          <article class="product-card" data-material="oro nativa" data-name="Anillo Semilla">
+            <div class="product-card__media">
+              <span class="tag">Favorito</span>
+              <button class="wish" type="button" aria-label="Guardar Anillo Semilla en favoritos" aria-pressed="false" data-product="Anillo Semilla">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 6.7 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg>
+              </button>
+              <img src="assets/producto-anillo.jpg" alt="Anillo de oro con detalles de esmeralda sobre la mano" loading="lazy" width="960" height="1200">
+              <button class="product-card__add" type="button" data-add="Anillo Semilla">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__material">Oro 18k · Esmeralda</p>
+              <h3>Anillo Semilla</h3>
+              <p class="product-card__price">$ 800.000 - $ 1.100.000</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-material="plata" data-name="Aretes Aurora">
+            <div class="product-card__media">
+              <span class="tag">Nuevo</span>
+              <button class="wish" type="button" aria-label="Guardar Aretes Aurora en favoritos" aria-pressed="false" data-product="Aretes Aurora">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 6.7 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg>
+              </button>
+              <img src="assets/producto-aretes.jpg" alt="Aretes en forma de aro sobre estuche verde" loading="lazy" width="960" height="1200">
+              <button class="product-card__add" type="button" data-add="Aretes Aurora">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__material">Plata 925 · Perla natural</p>
+              <h3>Aretes Aurora</h3>
+              <p class="product-card__price">$ 730.000 Todos</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-material="oro nativa" data-name="Collar Marea">
+            <div class="product-card__media">
+              <span class="tag">Edición limitada</span>
+              <button class="wish" type="button" aria-label="Guardar Collar Marea en favoritos" aria-pressed="false" data-product="Collar Marea">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 6.7 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg>
+              </button>
+              <img src="assets/producto-collar.jpg" alt="Collar de oro de cadena tejida sobre busto verde" loading="lazy" width="960" height="1200">
+              <button class="product-card__add" type="button" data-add="Collar Marea">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__material">Oro 18k · Cadena tejida</p>
+              <h3>Collar Marea</h3>
+              <p class="product-card__price">$ 1.200.000</p>
+            </div>
+          </article>
+
+          <article class="product-card" data-material="plata" data-name="Pulsera Vínculo">
+            <div class="product-card__media">
+              <span class="tag">Nuevo</span>
+              <button class="wish" type="button" aria-label="Guardar Pulsera Vínculo en favoritos" aria-pressed="false" data-product="Pulsera Vínculo">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 6.7 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg>
+              </button>
+              <img src="assets/producto-pulsera.jpg" alt="Pulsera de cadena sobre exposición negra" loading="lazy" width="960" height="1200">
+              <button class="product-card__add" type="button" data-add="Pulsera Vínculo">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__material">Plata 925 · Acabado mate</p>
+              <h3>Pulsera Vínculo</h3>
+              <p class="product-card__price">$ 800.000</p>
+            </div>
+          </article>
+
+          <p class="products__empty" id="products-empty" hidden>No encontramos piezas con ese nombre. <button type="button" id="empty-clear">Ver todas las piezas</button></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="section section--cream catalog" id="catalogo">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--dark">03 — Catálogo</p>
+            <h2>Lo que <em>tenemos hoy</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Una muestra de las piezas disponibles en el taller. Escríbenos para consultar existencia y precio.</p>
+            <a class="ig-link" href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener">@joyeria.nativa <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="catalog__grid">
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Aretes Esmeralda" aria-label="Añadir Aretes Esmeralda a la bolsa" style="--delay:.03s">
+            <span class="catalog__media"><img src="assets/catalogo/aretes-esmeralda.jpg" alt="Aretes de oro 18k con esmeralda sobre fondo verde" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Aretes</span><span class="catalog__mat">Oro 18k · Esmeralda <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 500.000 ~</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Collar Capas" aria-label="Añadir Collar Capas a la bolsa" style="--delay:.06s">
+            <span class="catalog__media"><img src="assets/catalogo/collar-capas.jpg" alt="Collar de oro 18k de varias capas sobre busto verde" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Collar</span><span class="catalog__mat">Oro 18k <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 1.129.000 - $ 1.412.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Anillo Corona" aria-label="Añadir Anillo Corona a la bolsa" style="--delay:.09s">
+            <span class="catalog__media"><img src="assets/catalogo/anillo-corona.jpg" alt="Anillo de oro 18k con forma de corona y esmeraldas" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Anillo</span><span class="catalog__mat">Oro 18k · Esmeralda <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 951.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Pulsera Jardín" aria-label="Añadir Pulsera Jardín a la bolsa" style="--delay:.12s">
+            <span class="catalog__media"><img src="assets/catalogo/pulsera-jardin.jpg" alt="Pulseras de oro 18k con circonias sobre la muñeca" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Pulsera</span><span class="catalog__mat">Oro 18k · Circonias <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 900.000 - $ 1.327.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Dijes Ámbar" aria-label="Añadir Dijes Ámbar a la bolsa" style="--delay:.15s">
+            <span class="catalog__media"><img src="assets/catalogo/dijes-ambar.jpg" alt="Dijes ovalados de oro 18k con circonias en un estuche" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Dije</span><span class="catalog__mat">Oro 18k · Circonias <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 723.000 - $ 812.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Aretes Jardín" aria-label="Añadir Aretes Jardín a la bolsa" style="--delay:.03s">
+            <span class="catalog__media"><img src="assets/catalogo/aretes-jardin.jpg" alt="Aretes de oro 18k con esmeraldas y corazones" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Aretes</span><span class="catalog__mat">Oro 18k · Esmeralda <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 400.000 - $ 523.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Collar Hilo" aria-label="Añadir Collar Hilo a la bolsa" style="--delay:.06s">
+            <span class="catalog__media"><img src="assets/catalogo/collar-hilo.jpg" alt="Collar fino de oro 18k sobre busto verde" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Collar</span><span class="catalog__mat">Oro 18k <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 1.000.000 - $ 1.200.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Anillo Esmeralda" aria-label="Añadir Anillo Esmeralda a la bolsa" style="--delay:.09s">
+            <span class="catalog__media"><img src="assets/catalogo/anillo-esmeralda.jpg" alt="Anillos de oro 18k con esmeraldas sobre la mano" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Anillo</span><span class="catalog__mat">Oro 18k · Esmeralda <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 700.000 - $ 1.000.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Pulsera Marea" aria-label="Añadir Pulsera Marea a la bolsa" style="--delay:.12s">
+            <span class="catalog__media"><img src="assets/catalogo/pulsera-marea.jpg" alt="Brazaletes de oro 18k apilados" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Pulsera</span><span class="catalog__mat">Oro 18k <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 713.000 - $ 1.100.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Dijes Fe" aria-label="Añadir Dijes Fe a la bolsa" style="--delay:.15s">
+            <span class="catalog__media"><img src="assets/catalogo/dijes-fe.jpg" alt="Dijes de oro 18k con forma de cruz y circonias" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Dije</span><span class="catalog__mat">Oro 18k · Circonias <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 1.230.000 - $ 1.820.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Aretes Órbita" aria-label="Añadir Aretes Órbita a la bolsa" style="--delay:.03s">
+            <span class="catalog__media"><img src="assets/catalogo/aretes-orbita.jpg" alt="Aretes de oro 18k en forma de aro sobre estuche verde" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Aretes</span><span class="catalog__mat">Oro 18k <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 960.000 - $ 1.555.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Collar Cadena" aria-label="Añadir Collar Cadena a la bolsa" style="--delay:.06s">
+            <span class="catalog__media"><img src="assets/catalogo/collar-cadena.jpg" alt="Collar de cadena de oro 18k sobre busto verde" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Collar</span><span class="catalog__mat">Oro 18k <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 1.200.000 - $ 1.400.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Pulsera Coral" aria-label="Añadir Pulsera Coral a la bolsa" style="--delay:.09s">
+            <span class="catalog__media"><img src="assets/catalogo/pulsera-coral.jpg" alt="Pulseras de cordón rojo con detalles de oro 18k" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Pulsera</span><span class="catalog__mat">Oro 18k · Cordón <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 612.000 - $ 900.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Aretes Cruz" aria-label="Añadir Aretes Cruz a la bolsa" style="--delay:.12s">
+            <span class="catalog__media"><img src="assets/catalogo/aretes-cruz.jpg" alt="Aretes de oro 18k con forma de cruz" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Aretes</span><span class="catalog__mat">Oro 18k <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 500.000 - $ 610.000</p>
+          </div>
+          <div class="catalog__item reveal" role="button" tabindex="0" data-add="Aretes Luz" aria-label="Añadir Aretes Luz a la bolsa" style="--delay:.15s">
+            <span class="catalog__media"><img src="assets/catalogo/aretes-luz.jpg" alt="Aretes huggie de oro 18k con circonias y esmeraldas" loading="lazy" width="720" height="900"></span>
+            <span class="catalog__caption"><span class="catalog__cat">Aretes</span><span class="catalog__mat">Oro 18k · Circonias <span aria-hidden="true">+</span></span></span>
+            <p class="product-card__price">$ 610.000 - $ 771.000</p>
+          </div>
+        </div>
+
+        <p class="catalog__note reveal">¿Buscas una pieza en particular? <a href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener">Escríbenos por Instagram <span aria-hidden="true">↗</span></a></p>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section section--cream faq" id="faq">
+      <div class="container">
+        <div class="faq__grid">
+          <div class="faq__intro reveal">
+            <p class="eyebrow eyebrow--dark">04 — Preguntas frecuentes</p>
+            <h2>Todo lo que<br><em>quieres saber</em></h2>
+            <p class="faq__lead">Materiales, tallas, envíos y cuidados. Si tu duda no está aquí, escríbenos y la resolvemos contigo.</p>
+            <a class="text-link" href="#contacto" data-whatsapp-link>Habla con nosotros <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="faq__list reveal" style="--delay:.08s">
+            <details class="faq__item">
+              <summary>¿Las piezas son de oro y plata reales?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <div class="faq__answer">
+                <p>Sí. Trabajamos con oro 18k, plata 925 y piedras naturales elegidas por su carácter. Cada pieza se revisa a mano antes de salir del taller.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Cómo sé mi talla de anillo?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <div class="faq__answer">
+                <p>Escríbenos por WhatsApp y te guiamos para medirla en casa. Si es una pieza a medida, confirmamos la talla contigo antes de empezar a producirla.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Hacen envíos a todo el país?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <div class="faq__answer">
+                <p>De momento solo hacemos envíos en Cali. Ya estamos trabajando en los envíos de forma nacional.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Puedo encargar una pieza personalizada?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <div class="faq__answer">
+                <p>Claro. Cuéntanos tu idea, la dibujamos y te confirmamos materiales, tiempo y precio antes de comenzar. Las piezas personalizadas son irrepetibles.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Cómo cuido mis joyas?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <div class="faq__answer">
+                <p>Evita el contacto con perfumes, cremas y agua; limpia con un paño suave y guarda cada pieza por separado. En <a href="#materiales">Materiales y cuidado</a> te contamos más.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>¿Puedo cambiar o devolver una pieza?<span class="faq__icon" aria-hidden="true"></span></summary>
+              <div class="faq__answer">
+                <p>Si la pieza no es lo que esperabas, escríbenos por WhatsApp y buscamos una solución. Las piezas personalizadas solo tienen cambio por defecto de fabricación.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="section story" id="historia">
+      <div class="container story__grid">
+        <div class="story__media reveal">
+          <img src="assets/historia.jpg" alt="Artesana trabajando el oro en su mesa de taller" loading="lazy" width="1600" height="2400">
+          <div class="story__caption"><span>Nativa Joyería</span><span>Hecho a mano</span></div>
+        </div>
+        <div class="story__content reveal" style="--delay:.1s">
+          <p class="eyebrow">05 — Nuestra historia</p>
+          <h2>De un sueño,<br><em>a la realidad</em></h2>
+          <p>Nativa nace por el sueño de repartir declaraciones de lujo, eligiendo e importando cada accesorio con cuidado. Cada pieza se dibuja, se funde y se pule a mano, sin prisa, para que llegue a tus manos con su propia historia.</p>
+          <p>Trabajamos con oro 18k, plata 925 y piedras naturales elegidas por su carácter. No seguimos tendencias: creamos objetos que quieren quedarse contigo.</p>
+          <div class="story__stats">
+            <div class="story__stat"><strong>100%</strong><span>Hecho a mano</span></div>
+            <div class="story__stat"><strong>18k</strong><span>Oro de ley</span></div>
+            <div class="story__stat"><strong>925</strong><span>Plata esterlina</span></div>
+          </div>
+          <p class="story__signature">— Nativa Joyería</p>
+          <a class="text-link" href="#materiales">Conoce nuestro proceso <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIALES -->
+    <section class="section values" id="materiales">
+      <div class="container">
+        <div class="values__head reveal">
+          <p class="eyebrow">06 — Materiales y cuidado</p>
+          <h2>El valor de <em>lo esencial</em></h2>
+          <p>Elegimos materiales que envejecen bien. Contigo, con el tiempo, con tu historia.</p>
+        </div>
+        <div class="values__grid">
+          <article class="value reveal" style="--delay:.05s">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Oro 18k</h3>
+            <p>Oro amarillo de alta pureza, elegido por su calidez y su resistencia. Una inversión que se hereda.</p>
+          </article>
+          <article class="value reveal" style="--delay:.14s">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 14.2A8.3 8.3 0 0 1 9.8 4a8.5 8.5 0 1 0 10.2 10.2Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Plata 925</h3>
+            <p>Plata esterlina trabajada con acabados artesanales. Con el tiempo, adquiere una pátina única.</p>
+          </article>
+          <article class="value reveal" style="--delay:.23s">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M20 4C10.5 4 4.5 8.8 4.5 16.3c0 1.5.3 2.7.8 3.7C6.2 15.6 10 12.5 15 11.5c-4 2-7 5.4-8.2 9.2 1 .5 2.2.8 3.4.8C17.9 21.5 20 14 20 4Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Cuidado</h3>
+            <p>Guarda cada pieza en su estuche, evita el agua y límpiala con un paño suave. Un gesto sencillo para toda una vida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="editorial" id="editorial">
+      <div class="editorial__grid">
+        <div class="editorial__media reveal">
+          <img src="assets/editorial.jpg" alt="Retrato de una mujer con aretes y collar de oro sobre fondo oscuro" loading="lazy" width="1600" height="2400">
+          <div class="editorial__seal" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs>
+                <path id="sealPath" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/>
+              </defs>
+              <g class="seal__ring">
+                <text><textPath href="#sealPath">NATIVA JOYERÍA · HECHO A MANO · PIEZAS ÚNICAS ·</textPath></text>
+              </g>
+              <path d="M60 44 70 53 60 70 50 53Z" fill="none" stroke="currentColor" stroke-width="1.1"/>
+              <path d="M50 53h20M60 44l-4 9 4 17M60 44l4 9-4 17" fill="none" stroke="currentColor" stroke-width=".7" opacity=".8"/>
+            </svg>
+          </div>
+        </div>
+        <div class="editorial__content reveal" style="--delay:.1s">
+          <p class="eyebrow">Editorial — Vol. 01</p>
+          <h2>El arte de<br><em>llevarla</em></h2>
+          <p>Capas de oro sobre la piel, texturas que se encuentran y una sola regla: escuchar tu propio ritmo. Así se lleva Nativa.</p>
+          <blockquote>“Una joya no se elige: se reconoce.”</blockquote>
+          <a class="btn" href="#galeria">Ver el lookbook <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">07 — En la piel</p>
+            <h2>En la piel,<br><em>en la tierra</em></h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Así se ven nuestras piezas cuando encuentran su historia.</p>
+            <a class="ig-link" href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener">@joyeria.nativa <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="gallery__grid">
+          <a class="gallery__item reveal" href="https://www.instagram.com/p/Dd926dIzCow/" target="_blank" rel="noopener" aria-label="Ver publicación: cadenas de oro sobre fondo oscuro" style="--delay:.03s">
+            <img src="assets/galeria-1.jpg" alt="Cadenas de oro de distintos eslabones sobre una superficie oscura" loading="lazy" width="900" height="1200">
+            <span class="ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></span>
+          </a>
+          <a class="gallery__item reveal" href="https://www.instagram.com/p/Df3GhofD_nd/?img_index=2" target="_blank" rel="noopener" aria-label="Ver publicación: anillos de oro con esmeraldas y circonias" style="--delay:.08s">
+            <img src="assets/galeria-2.jpg" alt="Tres anillos de oro con esmeraldas y circonias en la mano" loading="lazy" width="900" height="1200">
+            <span class="ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></span>
+          </a>
+          <a class="gallery__item reveal" href="https://www.instagram.com/p/DeSA_qUx7xK/" target="_blank" rel="noopener" aria-label="Ver publicación: aros de oro en estuche verde" style="--delay:.13s">
+            <img src="assets/galeria-3.jpg" alt="Aros de oro en un estuche verde" loading="lazy" width="900" height="1200">
+            <span class="ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></span>
+          </a>
+          <a class="gallery__item reveal" href="https://www.instagram.com/p/DfxYPbpAZzg/" target="_blank" rel="noopener" aria-label="Ver publicación: collares de oro en capas" style="--delay:.18s">
+            <img src="assets/galeria-4.jpg" alt="Busto verde con tres collares finos de oro en capas" loading="lazy" width="900" height="1200">
+            <span class="ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></span>
+          </a>
+          <a class="gallery__item reveal" href="https://www.instagram.com/p/DbFKkuLAZTH/" target="_blank" rel="noopener" aria-label="Ver publicación: dijes de cruz con circonias de color" style="--delay:.23s">
+            <img src="assets/galeria-5.jpg" alt="Dijes de cruz de oro con circonias verdes y rosas en un estuche" loading="lazy" width="900" height="1200">
+            <span class="ig-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact__inner reveal">
+          <svg class="contact__leaf" viewBox="0 0 80 34" fill="none" aria-hidden="true">
+            <path d="M40 31V7M40 15c-8.5 0-15-4-17-10 8-1.5 15 3 17 10ZM40 22c8.5 0 15-4 17-10-8-1.5-15 3-17 10Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p class="eyebrow eyebrow--center">08 — Contacto</p>
+          <h2 id="contact-title">Hablemos de <br><em>tu próxima pieza</em></h2>
+          <p class="contact__lead">Cuéntanos qué estás buscando. Completa tus datos y te llevaremos a WhatsApp con el mensaje listo para enviar.</p>
+
+          <!-- Cambia este número por el WhatsApp real: solo dígitos, con código de país. -->
+          <form class="contact-form" id="contact-form" data-whatsapp="573167816068" aria-labelledby="contact-title" novalidate>
+            <div class="contact-form__row">
+              <div class="contact-form__field">
+                <label for="contact-name">Nombre</label>
+                <input type="text" id="contact-name" name="nombre" autocomplete="given-name" required>
+              </div>
+              <div class="contact-form__field">
+                <label for="contact-lastname">Apellido</label>
+                <input type="text" id="contact-lastname" name="apellido" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-email">Correo electrónico</label>
+              <input type="email" id="contact-email" name="correo" autocomplete="email" required>
+            </div>
+            <div class="contact-form__field">
+              <label for="contact-message">Mensaje <span>(opcional)</span></label>
+              <textarea id="contact-message" name="mensaje" rows="3"></textarea>
+            </div>
+            <button class="contact-form__submit" type="submit" aria-describedby="contact-form-note">
+              Continuar por WhatsApp <span aria-hidden="true">↗</span>
+            </button>
+            <p class="contact-form__note" id="contact-form-note">Al continuar se abrirá WhatsApp con tu mensaje listo para enviar. No guardamos tus datos en esta web.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand" href="#inicio" aria-label="Nativa Joyería, ir al inicio">
+            <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 5 41 19 24 43 7 19 24 5Z" stroke="currentColor" stroke-width="1.2"/>
+              <path d="M7 19h34M24 5l-8 14 8 24M24 5l8 14-8 24" stroke="currentColor" stroke-width=".7" opacity=".65"/>
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">NATIVA</span>
+              <span class="brand__sub">JOYERÍA</span>
+            </span>
+          </a>
+          <p>Joyas que nacen de la tierra. Hechas a mano, pensadas para quedarse.</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener" aria-label="Instagram de Nativa Joyería">IG</a>
+            <a href="https://www.tiktok.com/@nativa.joyera?_r=1&_t=ZS-9BV0KS5ofs9" target="_blank" rel="noopener" aria-label="TikTok de Nativa Joyería">TT</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Tienda</h4>
+          <a href="#piezas" data-filter="oro">Oro</a>
+          <a href="#piezas" data-filter="plata">Plata</a>
+          <a href="#piezas" data-filter="nativa">Edición Nativa</a>
+          <a href="#piezas">Todas las piezas</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Casa Nativa</h4>
+          <a href="#historia">Nuestra historia</a>
+          <a href="#materiales">Materiales</a>
+          <a href="#editorial">Editorial</a>
+          <a href="#galeria">Galería</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Ayuda</h4>
+          <a href="#contacto">Envíos</a>
+          <a href="#contacto">Cambios y devoluciones</a>
+          <a href="#contacto">Guía de tallas</a>
+          <a href="#faq">Preguntas frecuentes</a>
+        </div>
+
+        <div class="footer__col footer__col--contact">
+          <h4>Contacto</h4>
+          <p>Atención de lunes a viernes<br>9:00 – 18:00</p>
+          <a href="#contacto" data-whatsapp-link>WhatsApp</a>
+          <a href="#contacto">Atención con cita previa</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Nativa Joyería · Precios en USD</p>
+        <div>
+          <a href="#contacto" id="privacy-open" aria-haspopup="dialog">Privacidad</a>
+          <a href="#contacto" id="terms-open" aria-haspopup="dialog">Términos</a>
+          <a href="https://www.pexels.com/" target="_blank" rel="noopener">Fotografía: Pexels</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BÚSQUEDA -->
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-labelledby="search-title" aria-hidden="true">
+    <div class="search-overlay__inner">
+      <div class="search-overlay__top">
+        <h2 id="search-title">Busca tu pieza</h2>
+        <button class="search-close" id="search-close" type="button" aria-label="Cerrar búsqueda">Cerrar <span aria-hidden="true">✕</span></button>
+      </div>
+      <form class="search-form" id="search-form" role="search">
+        <label class="sr-only" for="search-input">Buscar joyas</label>
+        <input type="search" id="search-input" placeholder="Anillo, collar, oro, plata..." autocomplete="off">
+        <button type="submit" aria-label="Buscar">→</button>
+      </form>
+      <div class="search-tags">
+        <span>Populares</span>
+        <button type="button" data-search="oro">Oro</button>
+        <button type="button" data-search="plata">Plata</button>
+        <button type="button" data-search="anillo">Anillo</button>
+        <button type="button" data-search="collar">Collar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- POLÍTICAS DE PRIVACIDAD -->
+  <div class="privacy-modal" id="privacy-modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title" aria-hidden="true">
+    <div class="privacy-modal__panel" tabindex="-1">
+      <div class="privacy-modal__top">
+        <div>
+          <span class="privacy-modal__eyebrow">Nativa Joyería</span>
+          <h2 id="privacy-title">Políticas de Privacidad</h2>
+        </div>
+        <button class="search-close" id="privacy-close" type="button" aria-label="Cerrar políticas de privacidad">Cerrar <span aria-hidden="true">✕</span></button>
+      </div>
+
+      <div class="privacy-modal__body" id="privacy-body" tabindex="0">
+        <p class="privacy-modal__updated">Última actualización: noviembre de 2026</p>
+        <p>En Nativa Joyería cuidamos tu información con el mismo esmero con el que trabajamos cada pieza. Esta política explica qué datos tratamos cuando visitas este sitio, para qué los usamos y cuáles son tus derechos, en el marco de la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia sobre protección de datos personales.</p>
+
+        <h3>1. Responsable del tratamiento</h3>
+        <p>Nativa Joyería, joyería artesanal en oro 18k y plata 925, es la responsable del tratamiento de los datos que nos compartas a través de este sitio. Puedes escribirnos por WhatsApp o por Instagram (<a href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener">@joyeria.nativa</a>) para cualquier consulta sobre esta política.</p>
+
+        <h3>2. Datos que tratamos</h3>
+        <ul>
+          <li><strong>Datos de contacto:</strong> nombre, apellido, correo electrónico y el mensaje que escribas en el formulario de contacto.</li>
+          <li><strong>Datos de navegación:</strong> información técnica básica (como dirección IP, tipo de dispositivo y navegador) que el servidor de alojamiento y los servicios externos descritos abajo pueden registrar de forma automática.</li>
+        </ul>
+        <p>No solicitamos datos de pago ni datos sensibles a través de este sitio.</p>
+
+        <h3>3. Para qué usamos tus datos</h3>
+        <ul>
+          <li>Responder tus consultas sobre piezas, existencias, precios, envíos y cambios.</li>
+          <li>Coordinar la atención y la compra de las piezas que te interesen.</li>
+          <li>Mantener la seguridad y el buen funcionamiento del sitio.</li>
+        </ul>
+        <p>No vendemos ni alquilamos tu información a terceros.</p>
+
+        <h3>4. Formulario de contacto y WhatsApp</h3>
+        <p>El formulario de contacto no guarda tus datos en nuestros servidores: solo prepara un mensaje con la información que escribiste y abre WhatsApp para que decidas si lo envías. Una vez enviado, el mensaje se rige también por las condiciones y la política de privacidad de WhatsApp.</p>
+
+        <h3>5. Servicios de terceros</h3>
+        <p>Este sitio usa o enlaza a servicios externos que pueden tratar datos técnicos según sus propias políticas:</p>
+        <ul>
+          <li><strong>Google Fonts:</strong> para cargar las tipografías del sitio.</li>
+          <li><strong>Instagram, TikTok y WhatsApp:</strong> cuando haces clic en sus enlaces, sales de este sitio y aplican sus propias condiciones.</li>
+          <li><strong>Pexels:</strong> origen de parte de las fotografías de referencia.</li>
+        </ul>
+
+        <h3>6. Cookies y almacenamiento local</h3>
+        <p>Este sitio no usa cookies propias de seguimiento ni de publicidad. Tu lista de favoritos se mantiene solo mientras la página está abierta. El contenido de tu bolsa de compra se guarda en el almacenamiento local de tu propio navegador para que no se pierda al recargar la página; no se envía a ningún servidor y puedes borrarlo vaciando la bolsa o limpiando los datos del navegador.</p>
+
+        <h3>7. Tus derechos</h3>
+        <p>Como titular de tus datos puedes, en cualquier momento:</p>
+        <ul>
+          <li>Conocer, actualizar y rectificar tus datos personales.</li>
+          <li>Solicitar prueba de la autorización que nos diste.</li>
+          <li>Ser informado sobre el uso que hacemos de tus datos.</li>
+          <li>Revocar la autorización y solicitar la supresión de tus datos.</li>
+          <li>Presentar quejas ante la Superintendencia de Industria y Comercio (SIC).</li>
+        </ul>
+        <p>Para ejercer estos derechos, escríbenos por WhatsApp o Instagram y atenderemos tu solicitud en los plazos que establece la ley.</p>
+
+        <h3>8. Seguridad y conservación</h3>
+        <p>Aplicamos medidas razonables para proteger tu información frente a accesos no autorizados. Conservamos tus datos solo durante el tiempo necesario para atender tu solicitud y cumplir obligaciones legales.</p>
+
+        <h3>9. Menores de edad</h3>
+        <p>Este sitio no está dirigido a menores de edad y no recopilamos sus datos de manera intencional. Si crees que un menor nos compartió información, avísanos para eliminarla.</p>
+
+        <h3>10. Cambios en esta política</h3>
+        <p>Podemos actualizar esta política para reflejar cambios en el sitio o en la normativa. La fecha de la última actualización aparece al inicio de este documento.</p>
+      </div>
+
+      <div class="privacy-modal__foot">
+        <button class="btn btn--solid" id="privacy-accept" type="button">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TÉRMINOS Y CONDICIONES -->
+  <div class="privacy-modal" id="terms-modal" role="dialog" aria-modal="true" aria-labelledby="terms-title" aria-hidden="true">
+    <div class="privacy-modal__panel" tabindex="-1">
+      <div class="privacy-modal__top">
+        <div>
+          <span class="privacy-modal__eyebrow">Nativa Joyería</span>
+          <h2 id="terms-title">Términos y Condiciones</h2>
+        </div>
+        <button class="search-close" id="terms-close" type="button" aria-label="Cerrar términos y condiciones">Cerrar <span aria-hidden="true">✕</span></button>
+      </div>
+
+      <div class="privacy-modal__body" id="terms-body" tabindex="0">
+        <p class="privacy-modal__updated">Última actualización: noviembre de 2026</p>
+        <p>Bienvenido a Nativa Joyería. Al navegar por este sitio y usar sus funciones aceptas los siguientes términos y condiciones. Si no estás de acuerdo con alguno de ellos, te pedimos que no uses el sitio.</p>
+
+        <h3>1. Quiénes somos</h3>
+        <p>Nativa Joyería es una joyería artesanal que trabaja con oro 18k y plata 925. Puedes comunicarte con nosotros por WhatsApp o por Instagram (<a href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener">@joyeria.nativa</a>).</p>
+
+        <h3>2. Uso del sitio</h3>
+        <ul>
+          <li>El sitio es para tu uso personal y de buena fe.</li>
+          <li>No está permitido intentar dañar, bloquear o acceder sin autorización al sitio ni a su contenido.</li>
+          <li>Debes darnos información veraz cuando nos contactes.</li>
+        </ul>
+
+        <h3>3. Productos, precios y disponibilidad</h3>
+        <ul>
+          <li>Cada pieza es hecha a mano, por lo que puede haber pequeñas variaciones de forma, tono o tamaño respecto a las fotografías.</li>
+          <li>Los precios se muestran en dólares estadounidenses (USD) y pueden cambiar sin previo aviso.</li>
+          <li>La disponibilidad no se actualiza en tiempo real: te invitamos a confirmar existencia y precio por Instagram o WhatsApp antes de comprar.</li>
+          <li>Algunas fotografías conservan anotaciones del taller y otras son de referencia.</li>
+        </ul>
+
+        <h3>4. Proceso de compra</h3>
+        <p>La bolsa de compra de este sitio te permite preparar tu pedido y enviarlo por WhatsApp, pero no procesa pagos ni confirma pedidos por sí sola. Una compra se considera acordada cuando te confirmamos por WhatsApp o Instagram la pieza, el precio, el medio de pago y la forma de entrega.</p>
+
+        <h3>5. Pagos</h3>
+        <p>Los medios de pago se acuerdan directamente contigo durante la conversación de compra. Este sitio no recoge datos de tarjetas ni información bancaria.</p>
+
+        <h3>6. Envíos</h3>
+        <p>El costo, el tiempo y la empresa transportadora de cada envío se informan antes de cerrar la compra. Una vez la pieza es entregada a la transportadora, los tiempos de entrega dependen de esta.</p>
+
+        <h3>7. Cambios y devoluciones</h3>
+        <p>Respetamos tus derechos como consumidor según la Ley 1480 de 2011 (Estatuto del Consumidor). Si compraste a distancia, puedes ejercer el derecho de retracto dentro de los cinco (5) días hábiles siguientes a la entrega, devolviendo la pieza sin uso y en su empaque original. Quedan exceptuadas las piezas hechas a medida o personalizadas según tus indicaciones. Escríbenos por WhatsApp o Instagram para gestionar un cambio o devolución.</p>
+
+        <h3>8. Garantía</h3>
+        <p>Nuestras piezas cuentan con la garantía legal por defectos de fabricación. La garantía no cubre el desgaste normal, golpes, contacto con químicos, ni arreglos hechos por terceros. Para conservar tus joyas, evita el contacto con perfumes, cloro y humedad prolongada.</p>
+
+        <h3>9. Propiedad intelectual</h3>
+        <p>Los diseños, textos, fotografías y marca de Nativa Joyería son de su titular y no pueden copiarse ni usarse con fines comerciales sin autorización escrita. Algunas imágenes de referencia provienen de Pexels y pertenecen a sus autores.</p>
+
+        <h3>10. Enlaces externos</h3>
+        <p>Este sitio enlaza a servicios como Instagram, TikTok, WhatsApp y Pexels. No controlamos su contenido y no somos responsables de sus políticas ni de lo que ocurra en ellos.</p>
+
+        <h3>11. Limitación de responsabilidad</h3>
+        <p>Hacemos lo posible para que la información del sitio sea correcta y esté disponible, pero no garantizamos que no tenga errores ni interrupciones. Esto no limita los derechos que la ley te reconoce como consumidor.</p>
+
+        <h3>12. Privacidad</h3>
+        <p>El tratamiento de tus datos personales se rige por nuestras Políticas de Privacidad, disponibles en el pie de página.</p>
+
+        <h3>13. Cambios en estos términos</h3>
+        <p>Podemos modificar estos términos en cualquier momento. La versión vigente es la publicada en este sitio, con la fecha de actualización indicada al inicio.</p>
+
+        <h3>14. Ley aplicable</h3>
+        <p>Estos términos se rigen por las leyes de la República de Colombia.</p>
+      </div>
+
+      <div class="privacy-modal__foot">
+        <button class="btn btn--solid" id="terms-accept" type="button">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOLSA DE COMPRA -->
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-drawer__panel" tabindex="-1">
+      <div class="cart-drawer__top">
+        <div>
+          <span class="privacy-modal__eyebrow">Nativa Joyería</span>
+          <h2 id="cart-title">Tu bolsa</h2>
+        </div>
+        <button class="search-close" id="cart-close" type="button" aria-label="Cerrar la bolsa">Cerrar <span aria-hidden="true">✕</span></button>
+      </div>
+
+      <div class="cart-drawer__body" id="cart-body">
+        <ul class="cart-list" id="cart-list"></ul>
+        <div class="cart-empty" id="cart-empty" hidden>
+          <p>Tu bolsa está vacía.</p>
+          <p class="cart-empty__sub">Descubre las piezas destacadas y añade tus favoritas.</p>
+          <button class="btn" id="cart-shop" type="button">Ver piezas destacadas</button>
+        </div>
+      </div>
+
+      <div class="cart-drawer__foot" id="cart-foot" hidden>
+        <div class="cart-total">
+          <span>Total <em id="cart-units"></em></span>
+          <strong id="cart-total">$ 0</strong>
+        </div>
+        <p class="cart-note">Precios en USD. El envío y el pago se acuerdan contigo por WhatsApp; este sitio no cobra ni procesa pagos.</p>
+        <button class="btn btn--solid" id="cart-checkout" type="button">Finalizar por WhatsApp</button>
+        <button class="cart-clear" id="cart-clear" type="button">Vaciar bolsa</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DATOS DEL CLIENTE PARA FINALIZAR EL PEDIDO -->
+  <div class="privacy-modal checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true">
+    <div class="privacy-modal__panel checkout-modal__panel" tabindex="-1">
+      <div class="privacy-modal__top">
+        <div>
+          <span class="privacy-modal__eyebrow">Nativa Joyería</span>
+          <h2 id="checkout-title">Tus datos</h2>
+        </div>
+        <button class="search-close" id="checkout-close" type="button" aria-label="Cerrar y volver a la bolsa">Cerrar <span aria-hidden="true">✕</span></button>
+      </div>
+
+      <form class="contact-form checkout-form" id="checkout-form" novalidate>
+        <div class="privacy-modal__body checkout-modal__body">
+          <p class="checkout-modal__summary" id="checkout-summary"></p>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label for="checkout-name">Nombre</label>
+              <input type="text" id="checkout-name" name="nombre" autocomplete="given-name" required>
+            </div>
+            <div class="contact-form__field">
+              <label for="checkout-lastname">Apellido</label>
+              <input type="text" id="checkout-lastname" name="apellido" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="contact-form__field">
+            <label for="checkout-email">Correo electrónico</label>
+            <input type="email" id="checkout-email" name="correo" autocomplete="email" required>
+          </div>
+          <p class="contact-form__note" id="checkout-note">Al continuar se abrirá WhatsApp con tu pedido listo para enviar.</p>
+        </div>
+        <div class="privacy-modal__foot checkout-modal__foot">
+          <button class="contact-form__submit" type="submit" aria-describedby="checkout-note">
+            Enviar pedido por WhatsApp <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a class="brand" href="#inicio" aria-label="Nativa Joyería, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M24 5 41 19 24 43 7 19 24 5Z" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M7 19h34M24 5l-8 14 8 24M24 5l8 14-8 24" stroke="currentColor" stroke-width=".7" opacity=".65"/>
+        </svg>
+        <span class="brand__text"><span class="brand__name">NATIVA</span><span class="brand__sub">JOYERÍA</span></span>
+      </a>
+      <button class="icon-btn menu-close" id="menu-close" type="button" aria-label="Cerrar menú">✕</button>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <a href="#inicio"><span>Inicio</span><em>01</em></a>
+      <a href="#colecciones"><span>Colecciones</span><em>02</em></a>
+      <a href="#catalogo"><span>Catálogo</span><em>03</em></a>
+      <a href="#historia"><span>Nuestra historia</span><em>04</em></a>
+      <a href="#editorial"><span>Editorial</span><em>05</em></a>
+      <a href="#galeria"><span>Galería</span><em>06</em></a>
+      <a href="#contacto"><span>Contacto</span><em>07</em></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="#contacto" data-whatsapp-link>WhatsApp</a>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/joyeria.nativa/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">PT</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (el enlace se completa con el número de #contact-form) -->
+  <a class="wa-float" href="https://wa.me/573167816068" data-whatsapp-link target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast__dot" aria-hidden="true"></span>
+    <span id="toast-text"></span>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
